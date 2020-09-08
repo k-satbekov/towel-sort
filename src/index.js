@@ -12,13 +12,12 @@ module.exports = function towelSort (matrix) {
       for(let j = 0; j < matrix[i].length; j++) {
         res.push(matrix[i][j]);
       }
-      reverse = !reverse;
     } else {
       for(let j = matrix[i].length - 1; j >= 0; j--) {
         res.push(matrix[i][j]);
       }
-      reverse = !reverse;
     }
+    reverse = !reverse;
   }
 
   return res;
